@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 100%;
+}
+#map span { display: none; }
+
+#forecastCarousel {
+  width: 100%; height: 100%;
+  margin: 0 auto;
+  background: rgba( 237, 237, 237, .3 );
+}
+#forecastCarousel .owl-stage-outer {
+   background-color: rgba(0, 0, 0, 0);
+   padding: 20px; height: 100%;
+}
+#forecastCarousel .owl-stage-outer::before, #forecastCarousel .owl-stage-outer::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 20%; height: 100%; 
+}
+#forecastCarousel .owl-stage-outer::before { left: 0; background: linear-gradient(90deg, white, transparent); }
+#forecastCarousel .owl-stage-outer::after { right: 0; background: linear-gradient(-90deg, white, transparent); }
+#forecastCarousel .owl-item {
+  transition: all .2s ease-in-out;
+}
+
+#forecastCarousel .owl-item .item {
+  text-align: center;
+  font-size: 1.8em;
+  padding: .5em;
+  background: rgba(255, 255, 255, .3);
+}
+#forecastCarousel span { display: none; }
+#forecastCarousel .owl-item .item img {
+  margin: 0 auto;
+  width: auto;
+}
+#forecastCarousel .owl-nav {
+  width: 100%; height: 100%;
+  top: 0; margin: 0; padding: 50px;
+  position: absolute;
+}
+
+#forecastCarousel .owl-nav [class*="owl-"] {
+    position: relative;
+    height: 25%;
+    padding: 0; margin: 0;
+    background-color: transparent;
+}
+
+#forecastCarousel .owl-nav [class*="owl-"] img {
+    height: 100%;
+
+}
+
+#forecastCarousel .owl-nav .owl-prev { 
+    
+    position: absolute; 
+    left: -30%; 
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#forecastCarousel .owl-nav .owl-next { position: absolute; right: -30%; }
+
+@media only screen and (min-width: 1030px){
+
+  #forecastCarousel {
+    background: transparent;
+    width: 80%; height: auto;  padding: 20px;
+  }
+  #forecastCarousel .owl-stage-outer {
+    height: auto;
+  }
+  #forecastCarousel .owl-item .item {
+    background: transparent;
+    font-size: 1em;
+  }
+  #infoContent  {
+    overflow: hidden;
+  }
+  
+  #infoContent .pane {
+    position: relative;
+    height: 200px;
+    float: left;
+    width: 30%; margin-bottom: 10px;
+    background: rgb(137,155,68, .5)
+  }
+  #infoContent .pane:nth-of-type(2) {
+    width: 70%;
+    background: white;
+  }
+  #tempConvert {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    curosr: pointer;
+  }
+  #placesPhoto {
+    clear: both;
+    width: 100%; height: 250px;
+    top: 0; left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
