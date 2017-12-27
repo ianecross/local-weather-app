@@ -1,4 +1,4 @@
-A webpage that generates quotations from the Forismatic API. 
+A webpage that that uses the google maps and openweathermap apis to produce 5 day forecasts and a local image for selected locations.
  
  http://ianecross.git.io/weather
 
