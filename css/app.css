@@ -71,6 +71,76 @@ html, body {
 }
 #forecastCarousel .owl-nav .owl-next { position: absolute; right: -30%; }
 
+/* footer formatting */
+.footer {
+  background-color: #222;
+  border-top: 3px outset #444;
+  bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
+  min-width: 320px;
+  padding: 1em 1em 0 1em;
+  width: 100%;
+  text-align: left;
+}
+.footer > div:first-child { text-align: left; }
+
+.footer .footer-text {
+  display: inline-block;
+}
+.footer .link-container {
+  margin: 0 auto; width: 100%; text-align: center;
+}
+.footer .attribution-logo {
+  width: 25px;
+  margin-bottom: -5px;
+}
+.footer-logos {
+  font-size: 14px;
+  margin-top: -.5em;
+}
+
+.footer-logos a {
+  text-decoration: none;
+}
+
+.footer-logos i {
+  border: 1px solid #646464;
+  border: 1px solid rgba(100, 100, 100, .3);
+  border-radius: 25%;
+  color: #777777;
+  margin: 0 0 .1em .1em;
+  padding-top: .25em;
+  text-align: center;
+  vertical-align: -1.5em;
+}
+
+.footer-logos .fa {
+  height: 1.75em;
+  width: 1.75em;
+}
+
+.attribution-logo {
+  vertical-align: text-bottom;
+  width: 90px;
+}
+
+.footer .container-fluid {
+  max-width: 768px;
+}
+.footer ul {
+  width: 180px;
+  margin: 0 auto;
+  padding: 0;
+}
+.footer ul li {
+  display: inline;
+}
+
+@media only screen and (min-width: 400px) {
+  .footer > div:first-child { text-align: center; }
+}
+
 @media only screen and (min-width: 1030px){
 
   #forecastCarousel {
